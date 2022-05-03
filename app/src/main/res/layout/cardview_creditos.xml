@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvCreditos"
+    app:cardBackgroundColor="#A62C23"
+    android:layout_margin="18dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCreditos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/ivCreditos"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/tvUniversidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivCreditos"
+            android:text="Universidad"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/tvCarnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivCreditos"
+            android:layout_below="@id/tvUniversidad"
+            android:text="Carné"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivCreditos"
+            android:layout_below="@id/tvCarnet"
+            android:text="Nombre"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
